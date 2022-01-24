@@ -605,8 +605,8 @@ scheduler:
 
   resources:
     limits:
-      cpu: 100m
-      memory: 128Mi
+      cpu: 500m
+      memory: 600Mi
     requests:
       cpu: 100m
       memory: 128Mi
@@ -807,8 +807,8 @@ webserver:
 
   resources:
     limits:
-      cpu: 100m
-      memory: 128Mi
+      cpu: 500m
+      memory: 600Mi
     requests:
       cpu: 100m
       memory: 128Mi
@@ -928,11 +928,11 @@ triggerer:
 
   resources:
     limits:
-      cpu: 100m
-      memory: 128Mi
+      cpu: 500m
+      memory: 600Mi
     requests:
-      cpu: 100m
-      memory: 128Mi
+      cpu: 500m
+      memory: 200Mi
 
 
   # Grace period for triggerer to finish after SIGTERM is sent from kubernetes
@@ -971,7 +971,7 @@ triggerer:
 flower:
   # Enable flower.
   # If True, and using CeleryExecutor/CeleryKubernetesExecutor, will deploy flower app.
-  enabled: true
+  enabled: false
 
   # Command to use when running flower (templated).
   command: ~
