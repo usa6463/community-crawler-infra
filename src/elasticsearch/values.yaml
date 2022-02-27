@@ -79,11 +79,11 @@ esJavaOpts: "" # example: "-Xmx1g -Xms1g"
 
 resources:
   requests:
-    cpu: "1000m"
-    memory: "2Gi"
+    cpu: "500m"
+    memory: "1Gi"
   limits:
-    cpu: "1000m"
-    memory: "2Gi"
+    cpu: "500m"
+    memory: "1Gi"
 
 initResources:
   {}
@@ -98,9 +98,10 @@ networkHost: "0.0.0.0"
 
 volumeClaimTemplate:
   accessModes: ["ReadWriteOnce"]
+  storageClassName: "hostpath"
   resources:
     requests:
-      storage: 10Gi
+      storage: 5Gi
 
 rbac:
   create: false
