@@ -31,8 +31,8 @@ lifecycle:
         - |
           #!/bin/bash
           # Add a template to adjust number of shards/replicas
-          TEMPLATE_NAME=dc-content-tt-template
-          INDEX_PATTERN="dc-content-tt-*"
+          TEMPLATE_NAME=dc-content-template
+          INDEX_PATTERN="dc-content-*"
           SHARD_COUNT=8
           REPLICA_COUNT=1
           ES_URL=http://localhost:9200
